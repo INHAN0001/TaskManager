@@ -1,0 +1,43 @@
+
+ <div class="background-container">
+  <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="form-container shadow-lg p-5 rounded">
+          <h2 >Create Task</h2>
+          <form (ngSubmit)="storeValue()">
+              <div class="form-group mb-3">
+                <label for="taskid">Task ID</label>
+                <input type="text" class="form-control"
+                  id="taskid" name="taskid" placeholder="Enter Task ID "
+                [(ngModel)]="taskobj.taskid">
+              </div>
+              <div class="form-group mb-3">
+                <label for="title">Task Title</label>
+                <input type="text" class="form-control"
+                 id="title" name="title" placeholder="Enter Task Title "
+                 [(ngModel)]="taskobj.title">
+              </div>
+              <div class="form-group mb-3">
+                <label for="description">Task Description</label>
+                <input type="text" class="form-control" id="description" name="description"
+                placeholder="Enter Task Description "
+                 [(ngModel)]="taskobj.description">
+              </div>
+              <div class="form-group mb-3">
+                <label for="date">Task Deadline</label>
+                <input type="text" class="form-control" id="date" name="date"
+                placeholder="Enter Task Deadline "
+                 [(ngModel)]="taskobj.date">
+              </div>
+              <div class="form-group mb-3">
+                <label for="status">Task Status</label>
+                <input type="text" class="form-control" id="status" name="status"
+                placeholder="Enter Task Status "
+                 [(ngModel)]="taskobj.status">
+              </div>
+              <div class="text-center">
+                  <button type="submit" class="btn btn-outline-primary">Submit</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</div>
